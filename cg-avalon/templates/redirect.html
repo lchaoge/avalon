@@ -1,0 +1,9 @@
+<script>
+    (function () {
+        var flag = encodeURI(window.location.search).substr(1);
+        if(flag !== "" && !/^_{1}\d*$/.test(flag)){
+            var _href = window.location.href;
+            window.location.href = _href.substring(0, _href.indexOf(".html")+5) + "?_" + new Date().getTime() + "#!/" + flag
+        }
+    })();
+</script>

@@ -1,0 +1,107 @@
+<div ms-controller="textBenchCtrl">
+    <div class="hide">
+        <input type="file" name="filename" id="filename">
+    </div>
+    <div class="container-fluid">
+        <ul class="breadcrumb">
+            <li><a href="javascript:void(0);" ms-click="redirect('firstLevel')">首页</a></li>
+            <li><a href="javascript:void(0);" ms-click="redirect('secondLevel')">二级链接</a></li>
+            <li class="active">当前页</li>
+        </ul>
+    </div>
+    <div class="rtl-custom-box mt15">
+        <div class="box-hd" style="border-top: 0;">
+            <div class="cont condition-box" ms-css-height="pageOpt.queryHei">
+                <div class="form-horizontal rtl-ml-15">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group row">
+                                <label class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label">店铺名称</label>
+                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                    <input type="text" class="form-control" ms-duplex="queryObj.query0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group row">
+                                <label class="col-xs-4 col-sm-4 col-md-4 col-lg-4 control-label">招租类型</label>
+                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                   	<select class="form-control">
+                                   		<option>旺铺</option>
+                                   		<option>新店</option>
+                                   		<option>升级调改</option>
+                                   		<option>临时铺位</option>
+                                   	</select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tc">
+                                    <button class="w70 btn btn-info btn-lg" type="button" ms-click="queryEvt">查询</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-bd pr">
+        <div id="myTabContent" class="tab-content custom-content">
+            <div class="tab-pane in active" id="tableList">
+                <div class="table-responsive" id="tableScrollId">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                        <tr class="rtl-table-header">
+                            <th class="mw110">店铺名</th>
+                            <th class="mw120">铺位类型</th>
+                            <th class="mw75">最小面积</th>
+                            <th class="mw75">最大面积</th>
+                            <th class="mw75">经营类型</th>
+                            <th class="mw75">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>大兴店</td>
+                            <td>新店</td>
+                            <td>102m²</td>
+                            <td>1202m²</td>
+                            <td>餐饮</td>
+                            <td><a href="#">查看</a></td>
+                        </tr>
+                        <tr>
+                            <td>大兴店</td>
+                            <td>新店</td>
+                            <td>102m²</td>
+                            <td>1202m²</td>
+                            <td>餐饮</td>
+                            <td><a href="#">查看</a></td>
+                        </tr>
+                        <tr>
+                            <td>大兴店</td>
+                            <td>新店</td>
+                            <td>102m²</td>
+                            <td>1202m²</td>
+                            <td>餐饮</td>
+                            <td><a href="#">查看</a></td>
+                        </tr>
+                        <tr>
+                            <td>大兴店</td>
+                            <td>新店</td>
+                            <td>102m²</td>
+                            <td>1202m²</td>
+                            <td>餐饮</td>
+                            <td><a href="#">查看</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="tablePaging" class="page"></div>
+            </div>
+        </div>
+    </div>
+</div>
